@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nicolai Schmidt in Cuxhaven">
+    <title>Nicolai Schmidt Cuxhaven</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fonts/Exo2/fonts.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+</head>
+<body>
+
+
+<header>
+    <h1>Nicolai Schmidt, Cuxhaven</h1>
+    <button id="dark-mode-toggle" class="icon-button" aria-label="Dark Mode Toggle"><i class="fas fa-sun"></i></button>
+    <button id="video-toggle" class="icon-button" aria-label="Video Toggle"><i class="fas fa-video"></i></button>
+</header>
+
+<div class="video-background">
+    <video autoplay muted loop id="video-background">
+        <source src="images/videobackground.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>	
+
+<div class="container">
+    <div class="content-section">
+
+        <p>Nicolai Schmidt, Cuxhaven</p><br /><p class="placeholder-text">Diese Seite befindet sich derzeit in Bearbeitung.</p><br />
+    </div>
+
+<div class="contact-form">
+  <h2>Kontaktformular</h2>
+  <form id="contactForm" action="contactform.php" method="POST">
+    <input type="hidden" name="lang" value="de">
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+     </div>
+     <div class="form-group">
+       <label for="email" id="email-label">E-Mail</label>
+       <input type="email" id="email" name="email" placeholder="max.mustermann@mustermail.de" required>
+     </div>
+     <div class="form-group">
+       <label for="message" id="message-label">Nachricht</label>
+       <textarea id="message" name="message" rows="4" placeholder="Nachricht - Die hier versandten Angaben werden von mir zur Bearbeitung der Anfrage verarbeitet." required></textarea>
+     </div>
+     <div style="display: none;">
+       <input type="text" name="website" value="">
+     </div>
+     <button type="submit">Nachricht senden</button>
+   </form>
+   <div id="formResponse" style="margin-top: 1rem;"></div>
+</div>
+    <div class="language-toggle-container">
+        <button id="language-toggle-de" class="language-button active" aria-label="Auf Deutsch anzeigen"><img src="images/germany-flag-icon.webp" alt="DE Flag" width="24" height="16"></button>
+        <button id="language-toggle-en" class="language-button" aria-label="Switch to English"><img src="images/uk-flag-icon.webp" alt="UK Flag" width="24" height="16"></button>
+
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
